@@ -1,1 +1,1 @@
-# frontend-development
+# Frontend Development - Michał Tkaczyk
