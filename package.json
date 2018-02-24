@@ -1,0 +1,19 @@
+{
+  "name": "lab1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Emkate/frontend-development.git"
+  },
+  "author": "Michał Tkaczyk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Emkate/frontend-development/issues"
+  },
+  "homepage": "https://github.com/Emkate/frontend-development#readme"
+}
