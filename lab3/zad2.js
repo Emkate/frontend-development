@@ -3,6 +3,10 @@ function Movie(name, year){
     this.year = year;
 }
 
+Movie.prototype.showData = function(){
+    return this;
+};
+
 function Series(name, year, finishYear, seasons) {
     Movie.call(this, name, year);
     this.finishYear = finishYear;
@@ -18,4 +22,6 @@ Series.prototype.yearLength = function(){
 
 var aSeries = new Series("Breaking Bad", 2008, 2012, 5);
 
+console.log(Series.prototype);
+console.log(aSeries.showData());
 console.log(aSeries.yearLength());
