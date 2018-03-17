@@ -136,33 +136,35 @@
 // dajGlos.apply(pies, ['pies']);
 
 
-var movies = (function(){
 
-})();
 
-function Series(title, seasons){
-    this.title = title;
-    this.seasons = seasons;
-}
+// function Series(title, seasons){
+//     this.title = title;
+//     this.seasons = seasons;
+// }
 
-var numbers = [1,2,23,4,5,6,1,24,15,11,18];
+// var numbers = [1,2,23,4,5,6,1,24,15,11,18];
 
-var evenNumbers = numbers.filter(function(item){
-    return item%2 === 0;
-}); 
+// var evenNumbers = numbers.filter(function(item){
+//     return item%2 === 0;
+// }); 
 
-var sortAsc = numbers.sort(function(a, b){
-    if(a > b){
-        return 1;
-    }
-    else{
-        return -1;
-    }
-});
+// var sortAsc = numbers.sort(function(a, b){
+//     if(a > b){
+//         return 1;
+//     }
+//     else{
+//         return -1;
+//     }
+// });
 
-console.log(evenNumbers);
-console.log(sortAsc);
+// console.log(evenNumbers);
+// console.log(sortAsc);
 
-var series = [
+// var series = [
     
-];
+// ];
+
+
+
+
