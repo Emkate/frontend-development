@@ -1,0 +1,11 @@
+*{
+    box-sizing: border-box;
+}
+
+.search-item{
+    width: 600px;
+    margin: 12px;
+    padding: 12px;
+    background-color: #ddd;
+    
+}
