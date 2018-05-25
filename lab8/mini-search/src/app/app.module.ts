@@ -3,11 +3,17 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { SeriesDetailsComponent } from './components/series-details/series-details.component';
+import { SeriesSearchComponent } from './components/series-search/series-search.component';
+import { SeriesListComponent } from './components/series-list/series-list.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SeriesDetailsComponent,
+    SeriesSearchComponent,
+    SeriesListComponent
   ],
   imports: [
     BrowserModule
