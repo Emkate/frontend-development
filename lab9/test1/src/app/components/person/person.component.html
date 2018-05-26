@@ -1,0 +1,17 @@
+<form [formGroup]="myForm" (ngSubmit)="mySubmit(myForm.value)">
+  <input [formControl]="myForm.controls.imie" type="text">
+  <input [formControl]="myForm.controls.rokUr" type="text">
+  <button type="submit">OK</button>
+</form>
+
+<div *ngIf="imie.hasError('required')">halo halo, kolego, imie wymagane</div>
+<div *ngIf="imie.hasError('minlength')">halo halo, kolego, imie musi miec minimum 2 znaki</div>
+<div *ngIf="imie.hasError('maxlength')">halo halo, kolego, imie nie moze miec wiecej niz 10 znakow</div>
+<div *ngIf="imie.hasError('bolekValue')">halo halo, kolego, imie nie moze byc bolek value :/</div>
+
+<div *ngIf="rokUr.hasError('required')">halo halo, kolego, rok ur jest wymagane</div>
+
+
+<ul>
+  <li *ngFor="let person of persons">{{person.imie}}</li>
+</ul>
