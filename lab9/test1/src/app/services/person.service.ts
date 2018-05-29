@@ -18,7 +18,7 @@ export class PersonService {
 
   getPersons (): Observable<Person[]> {
     // return this.persons;
-    return Observable.from(this.persons);
+    return Observable.of(this.persons);
   }
 
   addPerson (newPerson: Person) {

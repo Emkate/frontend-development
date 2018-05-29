@@ -3,6 +3,7 @@ import { PersonService } from '../../services/person.service';
 import { Person } from '../../model/person.model';
 import { FormGroup, FormBuilder, FormControl, Validators, AbstractControl } from '@angular/forms';
 import { Observable } from 'rxjs/Observable';
+import { PENDING } from '@angular/forms/src/model';
 
 @Component({
   selector: 'app-person',
@@ -49,6 +50,8 @@ export class PersonComponent implements OnInit {
     this._personService.getPersons().subscribe(person => {
       console.log('Nowa osoba');
     });
+
+    // this.imie.status = PENDING; //to jest do zadania domowego
   }
 
   myImieValidator (control: FormControl) {
