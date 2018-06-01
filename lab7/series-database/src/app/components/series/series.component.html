@@ -1,0 +1,8 @@
+
+<app-series-details [series]="selectedSeries"></app-series-details>
+
+<ul class="series">
+  <li *ngFor="let series of seriesList" (click)="onSelect(series)" [class.selected]="series === selectedSeries">
+    {{series.name}}
+  </li>
+</ul>
