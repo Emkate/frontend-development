@@ -1,0 +1,31 @@
+<div class="error" *ngIf="title.hasError('required')">halo halo, kolego, tytuł jest wymagany</div>
+<div class="error" *ngIf="title.hasError('minlength')">halo halo, kolego, tytuł musi miec minimum 2 znaki</div>
+<div class="error" *ngIf="title.hasError('maxlength')">halo halo, kolego, tytuł nie moze miec wiecej niz 30 znakow</div>
+
+<div class="error" *ngIf="startYear.hasError('required')">halo halo, kolego, rok zaczecia jest wymagany</div>
+<div class="error" *ngIf="startYear.hasError('minlength')">halo halo, kolego, rok zaczecia musi miec dokładnie 4 znaki</div>
+<div class="error" *ngIf="startYear.hasError('maxlength')">halo halo, kolego, rok zaczecia musi miec dokładnie 4 znaki</div>
+<div class="error" *ngIf="startYear.hasError('notANumber')">halo halo, kolego, rok zaczęcia musi byc liczbą</div>
+
+<div class="error" *ngIf="finishYear.hasError('minlength')">halo halo, kolego, rok zakończenia musi miec dokładnie 4 znaki</div>
+<div class="error" *ngIf="finishYear.hasError('maxlength')">halo halo, kolego, rok zakończenia musi miec dokładnie 4 znaki</div>
+<div class="error" *ngIf="finishYear.hasError('notANumber')">halo halo, kolego, rok zakończenia musi byc liczbą</div>
+
+<div class="form-container">
+  <form [formGroup]="seriesForm" (ngSubmit)="submitForm(seriesForm.value)">
+    <input [formControl]="seriesForm.controls.title" placeholder="Title" type="text">
+    <input [formControl]="seriesForm.controls.startYear" placeholder="Start year" type="text">
+    <input [formControl]="seriesForm.controls.finishYear" placeholder="Finish year" type="text">
+    <input [formControl]="seriesForm.controls.seasons" placeholder="Number of seasons" type="text">
+    <button type="submit">Add item</button>
+  </form>
+</div>
+
+<h1>Series list:</h1>
+<div *ngIf="seriesList" class="series-container">
+  <div class="series-item" *ngFor="let series of seriesList">
+    {{series.title | uppercase}}<br>
+    {{series.startYear}} - {{series.finishYear}}<br>
+    seasons: {{series.seasons}}
+  </div>
+</div>
