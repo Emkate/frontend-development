@@ -1,3 +1,7 @@
-<p>
-  series-search works!
-</p>
+<input type="search" placeholder="Search term" [formControl]="searchInput">
+
+<ul>
+  <li *ngFor="let series of searchResults">
+    {{series.title}}
+  </li>
+</ul>

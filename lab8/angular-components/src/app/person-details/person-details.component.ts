@@ -12,6 +12,10 @@ export class PersonDetailsComponent implements OnInit {
 
   @Output() childChanged = new EventEmitter<Person>();
 
+  constructor() {
+
+  }
+
   ngOnInit() {
     console.log(this.personToShow);
   }

@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { SeriesDetailsComponent } from './components/series-details/series-details.component';
 import { SeriesSearchComponent } from './components/series-search/series-search.component';
 import { SeriesListComponent } from './components/series-list/series-list.component';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -16,7 +17,9 @@ import { SeriesListComponent } from './components/series-list/series-list.compon
     SeriesListComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
