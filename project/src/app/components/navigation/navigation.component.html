@@ -1,0 +1,10 @@
+<div id="navbar" class="navbar">
+  <div class="navbar-content">
+    <div [class.navbar-content__item--selected]="activeRoute === '/list'" [routerLink]="['/list']" class="navbar-content__item">main page</div>
+    <div [class.navbar-content__item--selected]="activeRoute === '/about-us'" [routerLink]="['/about-us']" class="navbar-content__item">about us</div>
+    <div [class.navbar-content__item--selected]="activeRoute === '/privacy-policy'" [routerLink]="['/privacy-policy']" class="navbar-content__item">privacy policy</div>
+  </div>
+</div>
+<div (click)="onNavbarIconClick()" id="navbar-icon" class="navbar-icon">
+  <div class="navbar-icon__line"></div>
+</div>
